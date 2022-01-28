@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(images/images/burgerpalace\ bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlinks ul li a{
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+.navlinks ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+.textbox{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 25%;
+    left: 50;
+    text-align: left;
+    margin: 5%;
+}
+.textbox h1{
+font-size: 62px;
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: black;
+}
+.hero-btn{
+    background-color:orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.hero-btn:hover{
+    border: 1px solid orange;
+    background:red;
+    transition: 1s;
+
+}
+@media(max-width: 700px){
+    .textbox h1{
+        font-size: 20px;
+    }
+    .navlinks ul li{
+        display: block;
+    }
+    .navlinks{
+        position: absolute;
+        background: white;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+}
+nav .fa{
+    display: block;
+    color: turquoise;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+}
+
+
+
+/* <!-- cards --> */
+
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cardscol{
+    flex-basis: 31%;
+    background: rgb(248, 248, 247);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+p{
+    text-align: center;
+}
+.cardscol:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2)
+
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/* <!----- ourmenu -----> */
+
+
+.menu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.menu img{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.menucol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* <!--- ddecker ---> */
+
+
+.ddecker{
+    /* width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 100px;
+    display: ; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.ddecker p{
+    text-align: left;
+}
+.ddeckercol img{
+    position: center;
+    width: 50%;
+    border-radius: 10px;
+}
+.sndlast {
+        position: center;
+        /* width: 100%; */
+        /* border-radius: 10px; */
+        display: flex;
+        align-content: right;
+}
+
+    
+
+ 
+
+
+
