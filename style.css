@@ -201,7 +201,9 @@ p{
 }
 
 /* ----- footer ------ */
-
+#footer {
+    background-color: grey;
+}
 
     
 
